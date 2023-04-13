@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TelCell</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <header>
+   	  <div class="top">
+   	  	<div class="line">
+   	  		<h3>Telcell</h3>
+   	  		<p class="text">10 ՏԱՐԻ ՁԵԶ ՀԵՏ</p>
+   	  	  </div>
+   	  	 <div class="mechanics">
+   	  	 		<span class="tel">Տեխնիկական աջակցում՛ <a href="tel:060272222">(060) 27-22-22</a> i </span>
+   	  		   <p class="mechanic">Տերմինալ՛ 788</p>
+   	  	 </div>
+   	  	 <div class="timer">
+   	  	 	<time id="time">15:27</time><br>
+   	  	    <p id="datetime" class="datetime">2 Ապրիլ</p><br>
+   	  		<span id="week" class="week">Կիրակի</span>
+   	  	 </div>
+   	  </div>
+   </header>
+
+	<div class="center">
+		<div class="container">
+   			<div class="box1" onclick="showTelcellBalance()">   				
+   				<img src="img/home.png">
+   			</div>
+   			<div onclick="paymant(2)" class="box2">
+   				<img src="img/beeline.png">
+   				<!-- <button>Գրել դուրս գրվող գումարի քանակը</button> -->
+   			</div>
+   			<div  class="box2">
+   				<img src="img/ucom.png">
+   			</div>
+   			<div onclick="paymant(3)" class="box2">
+   				<img src="img/09cArarat.png">
+   			</div>
+   			<div class="box2">
+   				<img src="img/VTB-Logo.jpg">
+   			</div>   
+   		</div>
+	 <div class="mid">
+   		<div class="box1" onclick="paymant(1)">
+   			<img src="https://tel-cell.am/uploads/2021/02/telcell-walletarm.jpg">
+   		</div>
+   		<div class="box7">
+   			<img src="img/id.png">
+   		</div>
+   		<div class="box2">
+   			<img src="img/Без названия.png">
+   		</div>
+   		<div class="box2">
+   			<img src="img/bank.jpg">
+   		</div>
+   		<div class="box2">
+   			<img src="img/Acba_Bank_logo.jpg">
+   		</div>
+   	 </div>
+	</div>	
+
+   <script type="text/javascript" src="script.js"></script>
+   <script type="text/javascript">
+   	time.innerText = `${date.time.hours}:${date.time.minutes}`;
+		week.innerText = weekName;
+		datetime.innerText = `${date.day} ${monthName}`;
+   </script>
+</body>
+</html>
